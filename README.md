@@ -1,8 +1,6 @@
 # Seismic-Globe
 it is  project that visualizes earthquake data over time, focusing on magnitudes and locations around the globe.
-Here’s a complete `README.md` file for your project. You can copy and paste it directly into your repository.
 
-```markdown
 # Seismic Globe
 
 ## Overview
