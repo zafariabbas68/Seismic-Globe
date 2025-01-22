@@ -1,5 +1,4 @@
 
-
 # Seismic Globe
 
 ## Overview
@@ -19,12 +18,12 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/seismic-globe.git
+   git clone https://github.com/zafariabbas68/Seismic-Globe.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd seismic-globe
+   cd Seismic-Globe
    ```
 
 3. Install the required Python dependencies:
@@ -68,6 +67,14 @@ python generate_animation.py
 ```
 
 This will generate frames for the animation and compile them into an MP4 file (`Earthquake_Globe_Animation.mp4`).
+
+## Animation Preview
+
+Here’s a preview of the 30-second animation showcasing global earthquake activity:
+
+![Earthquake Animation](https://github.com/zafariabbas68/Seismic-Globe/raw/main/assets/Earthquake_Globe_Animation.mp4)
+
+> **Note**: Click on the link above to view or download the full animation.
 
 ## File Structure
 
@@ -115,3 +122,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Imageio**: For enabling the creation of animations from image frames.
 
 ---
+
