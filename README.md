@@ -1,21 +1,4 @@
-The screenshot confirms the presence of the MP4 file in your repository. However, it seems the animation is not displaying as expected in your GitHub README. GitHub does not directly embed MP4 videos, but it can display linked or downloadable files.
 
-### Steps to Correct the README
-
-1. **Host the MP4 File for Preview**:
-   - GitHub does not support embedding MP4 videos directly in README files.
-   - Instead, you need to either:
-     - Use a third-party hosting service (e.g., YouTube, Vimeo, or Google Drive) to embed the video preview.
-     - Keep the file downloadable directly from the repository.
-
-2. **Correct the Animation Preview Section**:
-   Update the README file to clarify that the animation can only be downloaded and viewed (not directly embedded).
-
-### Updated README.md
-
-Here’s an updated version of your README file that reflects these changes:
-
-```markdown
 # Seismic Globe
 
 ## Overview
