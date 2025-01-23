@@ -1,4 +1,21 @@
+The screenshot confirms the presence of the MP4 file in your repository. However, it seems the animation is not displaying as expected in your GitHub README. GitHub does not directly embed MP4 videos, but it can display linked or downloadable files.
 
+### Steps to Correct the README
+
+1. **Host the MP4 File for Preview**:
+   - GitHub does not support embedding MP4 videos directly in README files.
+   - Instead, you need to either:
+     - Use a third-party hosting service (e.g., YouTube, Vimeo, or Google Drive) to embed the video preview.
+     - Keep the file downloadable directly from the repository.
+
+2. **Correct the Animation Preview Section**:
+   Update the README file to clarify that the animation can only be downloaded and viewed (not directly embedded).
+
+### Updated README.md
+
+Here’s an updated version of your README file that reflects these changes:
+
+```markdown
 # Seismic Globe
 
 ## Overview
@@ -70,11 +87,11 @@ This will generate frames for the animation and compile them into an MP4 file (`
 
 ## Animation Preview
 
-Here’s a preview of the 30-second animation showcasing global earthquake activity:
+The 30-second animation showcasing global earthquake activity can be downloaded using the link below:
 
-![Earthquake Animation](https://github.com/zafariabbas68/Seismic-Globe/raw/main/assets/Earthquake_Globe_Animation.mp4)
+[Download Earthquake Animation (Earthquake_Globe_Animation.mp4)](https://github.com/zafariabbas68/Seismic-Globe/raw/main/Earthquake_Globe_Animation.mp4)
 
-> **Note**: Click on the link above to view or download the full animation.
+> **Note**: Click the link above to view or download the full animation.
 
 ## File Structure
 
@@ -120,6 +137,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **USGS Earthquake API**: For providing the earthquake data used in this project.
 - **Plotly**: For their excellent library to visualize geographical data in 3D.
 - **Imageio**: For enabling the creation of animations from image frames.
-
----
+```
 
