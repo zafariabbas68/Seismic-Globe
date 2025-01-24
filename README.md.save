@@ -1,9 +1,4 @@
 
-git add README.md
-git commit -m "Updated README.md with animation link"
-git push origin main
-
-
 # Seismic Globe
 
 ## Overview
