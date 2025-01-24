@@ -1,22 +1,4 @@
 
----
-
-### Key Changes Suggested:
-1. **Verify the Image Path**:
-   Ensure the path `images/frame_649.png` is correct, and that the file is present in the repository.
-
-2. **Enhance the README Structure**:
-   - Move the image directly below the "## Overview" section to immediately draw attention to the globe visualization.
-   - Ensure the animation preview link is functional (test on GitHub).
-
-3. **Remove the Redundant Animation Description**:
-   If `Earthquake_Globe_Animation.mp4` is no longer being used, remove its references.
-
----
-
-### Adjusted README Content:
-
-```markdown
 # Seismic Globe
 
 ![Seismic Globe](images/frame_649.png)
