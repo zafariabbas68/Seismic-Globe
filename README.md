@@ -67,6 +67,7 @@ python generate_animation.py
 ```
 
 This will generate frames for the animation and compile them into an MP4 file (`Earthquake_Globe_Animation.mp4`).
+![Seismic Globe](images/frame_649.png)
 
 ## Animation Preview
 
