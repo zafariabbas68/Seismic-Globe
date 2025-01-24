@@ -1,9 +1,29 @@
 
+---
+
+### Key Changes Suggested:
+1. **Verify the Image Path**:
+   Ensure the path `images/frame_649.png` is correct, and that the file is present in the repository.
+
+2. **Enhance the README Structure**:
+   - Move the image directly below the "## Overview" section to immediately draw attention to the globe visualization.
+   - Ensure the animation preview link is functional (test on GitHub).
+
+3. **Remove the Redundant Animation Description**:
+   If `Earthquake_Globe_Animation.mp4` is no longer being used, remove its references.
+
+---
+
+### Adjusted README Content:
+
+```markdown
 # Seismic Globe
+
+![Seismic Globe](images/frame_649.png)
 
 ## Overview
 
-**Seismic Globe** is a data visualization project that maps earthquake events from 2020 to 2024 on a rotating 3D globe. The project fetches earthquake data from the USGS API, processes it, and generates an interactive 3D globe to visualize the earthquakes' location, magnitude, and depth. The globe can be viewed in real-time, and a 30-second animation is generated to showcase global earthquake activity.
+**Seismic Globe** is a data visualization project that maps earthquake events from 2020 to 2024 on a rotating 3D globe. The project fetches earthquake data from the USGS API, processes it, and generates an interactive 3D globe to visualize the earthquakes' location, magnitude, and depth. The globe can be viewed in real-time.
 
 ## Features
 
@@ -11,8 +31,6 @@
 - **3D Globe Visualization**: Interactive globe that shows earthquake activity over time.
 - **Magnitude-based Marker Sizing**: Earthquake markers' size is dynamically scaled based on their magnitude.
 - **Depth-based Coloring**: The color of earthquake markers reflects the depth of each earthquake.
-- **Rotating Globe Animation**: Generates a 30-second animation showcasing the global earthquake activity, with the globe rotating to provide a full view.
-- **Data Export**: The fetched earthquake data is saved as a CSV file for further analysis.
 
 ## Installation
 
@@ -35,13 +53,11 @@
 - `pandas`: For handling the earthquake data.
 - `requests`: To fetch data from the USGS API.
 - `plotly`: For creating the interactive 3D globe visualization.
-- `imageio`: To create the animation from the globe frames.
+- `imageio`: To create animations (if needed).
 
 ## Usage
 
 ### Step 1: Fetch Earthquake Data
-
-The script automatically fetches earthquake data from the USGS Earthquake API for the years 2020-2024. The data is filtered to include only earthquakes with a magnitude of 5.0 or higher.
 
 Run the script to fetch the data:
 ```bash
@@ -59,36 +75,15 @@ python visualize_earthquakes.py
 
 This will open an interactive Plotly plot in your browser, displaying the earthquakes on a rotating globe.
 
-### Step 3: Generate an Animation
-
-To create a 30-second animation of the rotating globe with the earthquake data, use the following command:
-```bash
-python generate_animation.py
-```
-
-This will generate frames for the animation and compile them into an MP4 file (`Earthquake_Globe_Animation.mp4`).
-![Seismic Globe](images/frame_649.png)
-
-
-## Animation Preview
-
-The 30-second animation showcasing global earthquake activity can be downloaded using the link below:
-
-[Download Earthquake Animation (Earthquake_Globe_Animation.mp4)](https://github.com/zafariabbas68/Seismic-Globe/raw/main/Earthquake_Globe_Animation.mp4)
-
-> **Note**: Click the link above to view or download the full animation.
-
 ## File Structure
 
 ```
 /Seismic-Globe
 │
-├── /frames/              # Directory to save frames for animation
+├── /images/              # Directory containing visualization images
 ├── earthquake_data_2020_2024.csv # Fetched earthquake data saved in CSV format
-├── Earthquake_Globe_Animation.mp4 # Final 30-second animation of the rotating globe
 ├── fetch_earthquake_data.py  # Script to fetch earthquake data from the USGS API
 ├── visualize_earthquakes.py  # Script to generate the 3D globe visualization
-├── generate_animation.py     # Script to create the 30-second animation
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Project documentation
 └── .gitignore               # Git ignore file
@@ -123,4 +118,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Plotly**: For their excellent library to visualize geographical data in 3D.
 - **Imageio**: For enabling the creation of animations from image frames.
 ```
-
