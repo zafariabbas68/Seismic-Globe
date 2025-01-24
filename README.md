@@ -1,124 +1,138 @@
-# Seismic Globe
-
-## Overview
-
-**Seismic Globe** is a data visualization project that maps earthquake events from 2020 to 2024 on a rotating 3D globe. The project fetches earthquake data from the USGS API, processes it, and generates an interactive 3D globe to visualize the earthquakes' location, magnitude, and depth. The globe can be viewed in real-time, and a 30-second animation is generated to showcase global earthquake activity.
-
-## Features
-
-- **Global Earthquake Data**: Fetches earthquake data (magnitude 5.0 and above) from the USGS Earthquake API.
-- **3D Globe Visualization**: Interactive globe that shows earthquake activity over time.
-- **Magnitude-based Marker Sizing**: Earthquake markers' size is dynamically scaled based on their magnitude.
-- **Depth-based Coloring**: The color of earthquake markers reflects the depth of each earthquake.
-- **Rotating Globe Animation**: Generates a 30-second animation showcasing the global earthquake activity, with the globe rotating to provide a full view.
-- **Data Export**: The fetched earthquake data is saved as a CSV file for further analysis.
-
-## Installation
-
-1. Clone the repository:
-   
-bash
-   git clone https://github.com/zafariabbas68/Seismic-Globe.git
 
 
-2. Navigate to the project directory:
-   
-bash
-   cd Seismic-Globe
+# Seismic Globe  
 
+## Overview  
 
-3. Install the required Python dependencies:
-   
-bash
-   pip install -r requirements.txt
+**Seismic Globe** is a data visualization project that maps earthquake events (2020–2024) on a rotating 3D globe. It fetches earthquake data from the USGS API, processes it, and generates an interactive globe to visualize the earthquakes' locations, magnitudes, and depths. A 30-second animation highlights global earthquake activity with a rotating perspective.  
 
+---
 
-### Dependencies:
-- pandas: For handling the earthquake data.
-- requests: To fetch data from the USGS API.
-- plotly: For creating the interactive 3D globe visualization.
-- imageio: To create the animation from the globe frames.
+## Features  
 
-## Usage
+- **Global Earthquake Data**: Retrieves earthquake data (magnitude ≥ 5.0) from the USGS Earthquake API.  
+- **Interactive 3D Globe**: Displays earthquake events with real-time interactivity.  
+- **Magnitude-Based Marker Sizing**: Adjusts marker size dynamically according to earthquake magnitude.  
+- **Depth-Based Coloring**: Uses marker colors to indicate earthquake depths.  
+- **Rotating Globe Animation**: Produces a 30-second animation showcasing worldwide earthquake activity.  
+- **Data Export**: Saves fetched earthquake data as a CSV file for further analysis.  
 
-### Step 1: Fetch Earthquake Data
+---
 
-The script automatically fetches earthquake data from the USGS Earthquake API for the years 2020-2024. The data is filtered to include only earthquakes with a magnitude of 5.0 or higher.
+## Installation  
 
-Run the script to fetch the data:
-bash
-python fetch_earthquake_data.py
+Follow these steps to set up the project:  
 
+1. **Clone the Repository**:  
+   ```bash  
+   git clone https://github.com/zafariabbas68/Seismic-Globe.git  
+   ```  
 
-This will save the earthquake data in a CSV file (earthquake_data_2020_2024.csv).
+2. **Navigate to the Project Directory**:  
+   ```bash  
+   cd Seismic-Globe  
+   ```  
 
-### Step 2: Visualize Earthquake Data
+3. **Install Required Dependencies**:  
+   ```bash  
+   pip install -r requirements.txt  
+   ```  
 
-To visualize the earthquake data on the 3D globe, run the visualization script:
-bash
-python visualize_earthquakes.py
+### Dependencies  
 
+- `pandas`: For earthquake data processing.  
+- `requests`: To fetch earthquake data from the USGS API.  
+- `plotly`: To create the interactive 3D globe visualization.  
+- `imageio`: To generate animations from image frames.  
 
-This will open an interactive Plotly plot in your browser, displaying the earthquakes on a rotating globe.
+---
 
-### Step 3: Generate an Animation
+## Usage  
 
-To create a 30-second animation of the rotating globe with the earthquake data, use the following command:
-bash
-python generate_animation.py
+### Step 1: Fetch Earthquake Data  
 
+The script fetches earthquake data for the years 2020–2024 (magnitude ≥ 5.0) from the USGS Earthquake API.  
 
+Run the following command to fetch and save data as a CSV file:  
+```bash  
+python fetch_earthquake_data.py  
+```  
+This will generate `earthquake_data_2020_2024.csv`.  
 
+### Step 2: Visualize Earthquake Data  
 
+To create an interactive 3D globe visualization:  
+```bash  
+python visualize_earthquakes.py  
+```  
+This opens a Plotly plot in your browser, displaying earthquake events on a rotating globe.  
 
-## Animation Preview
+### Step 3: Generate an Animation  
 
-The 30-second animation showcasing global earthquake activity can be downloaded using the link below:
+To produce a 30-second animation of the rotating globe with earthquake data:  
+```bash  
+python generate_animation.py  
+```  
 
-[Download Earthquake Animation (Earthquake_Globe_Animation.mp4)](https://github.com/zafariabbas68/Seismic-Globe/raw/main/Earthquake_Globe_Animation.mp4)
+---
 
-> **Note**: Click the link above to view or download the full animation.
+## Animation Preview  
 
-## File Structure
+The animation (Earthquake_Globe_Animation.mp4) showcases global earthquake activity:  
 
-/Seismic-Globe
-│
-├── /frames/              # Directory to save frames for animation
-├── earthquake_data_2020_2024.csv # Fetched earthquake data saved in CSV format
-├── Earthquake_Globe_Animation.mp4 # Final 30-second animation of the rotating globe
-├── fetch_earthquake_data.py  # Script to fetch earthquake data from the USGS API
-├── visualize_earthquakes.py  # Script to generate the 3D globe visualization
-├── generate_animation.py     # Script to create the 30-second animation
-├── requirements.txt         # Python dependencies
-├── README.md                # Project documentation
-└── .gitignore               # Git ignore file
+[**Download the Animation**](https://github.com/zafariabbas68/Seismic-Globe/raw/main/Earthquake_Globe_Animation.mp4)  
 
+---
 
-## Requirements
+## File Structure  
 
-The following Python packages are required to run the project:
+```  
+/Seismic-Globe  
+│  
+├── /frames/                   # Directory for animation frames  
+├── earthquake_data_2020_2024.csv  # Fetched earthquake data in CSV format  
+├── Earthquake_Globe_Animation.mp4 # Final animation of the rotating globe  
+├── fetch_earthquake_data.py      # Script to fetch earthquake data from the API  
+├── visualize_earthquakes.py      # Script to create the 3D globe visualization  
+├── generate_animation.py         # Script to generate the animation  
+├── requirements.txt              # Python dependencies  
+├── README.md                     # Project documentation  
+└── .gitignore                    # Git ignore file  
+```  
 
-- pandas
-- requests
-- plotly
-- imageio
+---
 
-You can install them using pip:
+## Requirements  
 
-bash
-pip install pandas requests plotly imageio
+Ensure the following Python packages are installed:  
 
+- `pandas`  
+- `requests`  
+- `plotly`  
+- `imageio`  
 
-## Contributing
+Install these dependencies using:  
+```bash  
+pip install pandas requests plotly imageio  
+```  
 
-Feel free to open issues and pull requests. Contributions are welcome to improve this project!
+---
 
-## License
+## Contributing  
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are welcome! Feel free to submit issues and pull requests to improve the project.  
 
-## Acknowledgments
+---
 
-- **USGS Earthquake API**: For providing the earthquake data used in this project.
-- **Plotly**: For their excellent library to visualize geographical data in 3D.
-- **Imageio**: For enabling the creation of animations from image frames.
+## License  
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.  
+
+---
+
+## Acknowledgments  
+
+- **USGS Earthquake API**: For providing earthquake data.  
+- **Plotly**: For their interactive visualization library.  
+- **Imageio**: For enabling animation creation from image frames.  
+
